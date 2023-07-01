@@ -44,4 +44,4 @@ $ brew
 
     ![image](readme_images/screenshot_4.png)
     - Set the `appId` in the `ContentView.swift`
-    - Change the `endPoint`
+    - Set the `endPoint` in the `ContentView.swift`

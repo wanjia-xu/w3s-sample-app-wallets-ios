@@ -19,8 +19,8 @@ struct ContentView: View {
 
     let adapter = WalletSdkAdapter()
 
-    @State var appId = "your-app-id" // put your App ID here
-    @State var endPoint = EndPoint.production
+    let endPoint = "https://api.circle.com/v1/w3s"
+    @State var appId = "your-app-id" // put your App ID here programmatically
 
     @State var userToken = ""
     @State var secretKey = ""
@@ -48,18 +48,14 @@ struct ContentView: View {
         }
         .scrollContentBackground(.hidden)
         .onAppear {
-            self.adapter.initSDK(endPoint: endPoint.urlString, appId: appId)
+            self.adapter.initSDK(endPoint: endPoint, appId: appId)
 
             if let storedAppId = self.adapter.storedAppId, !storedAppId.isEmpty {
                 self.appId = storedAppId
             }
         }
-        .onChange(of: endPoint) { newValue in
-            self.adapter.updateEndPoint(newValue.urlString, appId: appId)
-            self.showToast(.general, message: "End Point: \(newValue.urlString)")
-        }
         .onChange(of: appId) { newValue in
-            self.adapter.updateEndPoint(endPoint.urlString, appId: newValue)
+            self.adapter.updateEndPoint(endPoint, appId: newValue)
             self.adapter.storedAppId = newValue
         }
         .toast(message: toastMessage ?? "",
@@ -77,7 +73,7 @@ struct ContentView: View {
 
     var sectionEndPoint: some View {
         Section {
-            Text(endPoint.urlString)
+            Text(endPoint)
         } header: {
             Text("End Point :")
         }

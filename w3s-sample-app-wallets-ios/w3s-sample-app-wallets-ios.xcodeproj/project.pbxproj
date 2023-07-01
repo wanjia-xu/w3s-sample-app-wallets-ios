@@ -14,7 +14,6 @@
 		B3C9B6B62A4ACAE800081B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C9B6B52A4ACAE800081B3A /* Assets.xcassets */; };
 		B3C9B6B92A4ACAE800081B3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C9B6B82A4ACAE800081B3A /* Preview Assets.xcassets */; };
 		B3C9B6C02A4ACB9200081B3A /* WalletSdkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9B6BF2A4ACB9200081B3A /* WalletSdkAdapter.swift */; };
-		B3C9B6C52A4ACD0A00081B3A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9B6C32A4ACC2500081B3A /* EndPoint.swift */; };
 		B3C9B6C62A4ACD1100081B3A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9B6C22A4ACC2500081B3A /* Toast.swift */; };
 		B3C9B6C72A4ACD1300081B3A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9B6C42A4ACC2500081B3A /* Utility.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		B3C9B6B82A4ACAE800081B3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3C9B6BF2A4ACB9200081B3A /* WalletSdkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSdkAdapter.swift; sourceTree = "<group>"; };
 		B3C9B6C22A4ACC2500081B3A /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		B3C9B6C32A4ACC2500081B3A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		B3C9B6C42A4ACC2500081B3A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 		B3C9B6C12A4ACC1E00081B3A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B3C9B6C32A4ACC2500081B3A /* EndPoint.swift */,
 				B3C9B6C22A4ACC2500081B3A /* Toast.swift */,
 				B3AA29142A4D861B00326630 /* UserDefault.swift */,
 				B3C9B6C42A4ACC2500081B3A /* Utility.swift */,
@@ -233,7 +230,6 @@
 				B3C9B6C02A4ACB9200081B3A /* WalletSdkAdapter.swift in Sources */,
 				B3C9B6C72A4ACD1300081B3A /* Utility.swift in Sources */,
 				B3C9B6C62A4ACD1100081B3A /* Toast.swift in Sources */,
-				B3C9B6C52A4ACD0A00081B3A /* EndPoint.swift in Sources */,
 				B3C9B6B22A4ACAE700081B3A /* w3s_sample_app_wallets_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
